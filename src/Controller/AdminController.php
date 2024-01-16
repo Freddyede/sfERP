@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class AdminController extends AbstractServiceController
 {
-    #[Route('/admin', name: 'app_admin')]
+    #[Route('/admin', name: 'admin.index')]
     public function index(): Response
     {
         return $this->render('admin/index.html.twig', [
